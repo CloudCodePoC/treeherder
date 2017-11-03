@@ -41,7 +41,7 @@ a {
   overflow-x: hidden;
 }
 
-.pagination, .carousel, .panel-title a {
+.pagination, .panel-title a {
   cursor: pointer;
 }
 
@@ -79,6 +79,11 @@ input[type="checkbox"] {
 /* Spacing for menus with adjacent checkboxes */
 .checkbox-dropdown-menu {
   padding-left: 8px;
+.dropdown-menu-right {
+    left: auto;
+    right: 0;
+}
+
 }
 
 /* Spacing for menus with adjacent icons */
@@ -250,6 +255,12 @@ input[type="checkbox"] {
 .btn-xs {
   padding: 3px 6px 3px 6px;
   font-size: 12px;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .btn-light-bordered {

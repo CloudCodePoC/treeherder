@@ -24,6 +24,20 @@ body {
     padding-bottom: 8px;
 }
 
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    padding: 0;
+}
+
+.navbar-row {
+    flex-direction: row;
+}
+
+.navbar-row li {
+    align-self: center;
+}
+
 .navbar-nav > li > a {
     padding: 10px 15px;
     font-size: 12px;

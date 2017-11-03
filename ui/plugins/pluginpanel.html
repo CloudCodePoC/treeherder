@@ -11,7 +11,7 @@
 <div id="info-panel-content">
   <div id="job-details-panel">
     <div id="job-details-actionbar">
-      <nav class="navbar info-panel-navbar">
+      <nav class="navbar navbar-dark info-panel-navbar">
         <ul class="nav navbar-nav actionbar-nav">
 
           <li ng-repeat="job_log_url in job_log_urls">
@@ -118,19 +118,19 @@
             <ul class="dropdown-menu actionbar-menu" role="menu">
               <li class="{{ canBackfill() ? '' : 'disabled' }}">
                 <a ng-attr-title="{{ backfillButtonTitle() }}"
+                   class="dropdown-item"
                    ng-click="!canBackfill() || backfillJob()">Backfill</a>
               </li>
               <li ng-if-start="job.taskcluster_metadata">
-                <a target="_blank" href="{{ getInspectTaskUrl(job.taskcluster_metadata.task_id) }}">Inspect Task</a>
+                <a target="_blank" class="dropdown-item" href="{{ getInspectTaskUrl(job.taskcluster_metadata.task_id) }}">Inspect Task</a>
+              </li>
+              <li><a target="_blank" class="dropdown-item" href="{{ getInspectTaskUrl(job.taskcluster_metadata.task_id) }}/create">Edit and Retrigger</a>
               </li>
               <li>
-                <a target="_blank" href="{{ getInspectTaskUrl(job.taskcluster_metadata.task_id) }}/create">Edit and Retrigger</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://tools.taskcluster.net/one-click-loaner/#{{job.taskcluster_metadata.task_id}}">One Click Loaner</a>
+                <a target="_blank" class="dropdown-item" href="https://tools.taskcluster.net/one-click-loaner/#{{job.taskcluster_metadata.task_id}}">One Click Loaner</a>
               </li>
               <li ng-if-end>
-                <a ng-click="customJobAction()">Custom Action...</a>
+                <a ng-click="customJobAction()" class="dropdown-item">Custom Action...</a>
               </li>
             </ul>
           </li>

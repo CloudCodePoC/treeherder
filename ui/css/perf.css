@@ -261,7 +261,7 @@ to { opacity: 0; }
   flex: none;
 }
 
-.compare-form .form-group .panel {
+.compare-form .form-group .card {
   flex: none;
   width: 360px;
   height: 250px;
