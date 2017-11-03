@@ -25,6 +25,28 @@
     overflow: auto;
     margin-top: 10px;
     padding-bottom: 8px;
+.dropdown-menu {
+    min-width: inherit;
+}
+
+.dropdown-menu > li > a {
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #262626;
+    text-decoration: none;
+}
+
+label.dropdown-item {
+    margin-bottom: 0;
+}
+
+.dropdown-item input[type="checkbox"] {
+    margin-right: 5px;
 }
 
 #th-logo {
@@ -281,10 +303,10 @@ th-watched-repo {
 .btn-unclassified-failures.disabled:focus,
 .btn-unclassified-failures.disabled:active,
 .btn-unclassified-failures.disabled.active,
-.btn-unclassified-failures[disabled]:hover,
-.btn-unclassified-failures[disabled]:focus,
-.btn-unclassified-failures[disabled]:active,
-.btn-unclassified-failures[disabled].active,
+.btn-unclassified-failures:disabled:hover,
+.btn-unclassified-failures:disabled:focus,
+.btn-unclassified-failures:disabled:active,
+.btn-unclassified-failures:disabled.active,
 fieldset[disabled] .btn-unclassified-failures:hover,
 fieldset[disabled] .btn-unclassified-failures:focus,
 fieldset[disabled] .btn-unclassified-failures:active,
@@ -319,10 +341,10 @@ fieldset[disabled] .btn-unclassified-failures.active {
 .btn-view-nav.disabled:focus,
 .btn-view-nav.disabled:active,
 .btn-view-nav.disabled.active,
-.btn-view-nav[disabled]:hover,
-.btn-view-nav[disabled]:focus,
-.btn-view-nav[disabled]:active,
-.btn-view-nav[disabled].active,
+.btn-view-nav:disabled:hover,
+.btn-view-nav:disabled:focus,
+.btn-view-nav:disabled:active,
+.btn-view-nav:disabled.active,
 fieldset[disabled] .btn-view-nav:hover,
 fieldset[disabled] .btn-view-nav:focus,
 fieldset[disabled] .btn-view-nav:active,
@@ -352,10 +374,10 @@ fieldset[disabled] .btn-view-nav.active {
 .btn-view-nav-closed.disabled:focus,
 .btn-view-nav-closed.disabled:active,
 .btn-view-nav-closed.disabled.active,
-.btn-view-nav-closed[disabled]:hover,
-.btn-view-nav-closed[disabled]:focus,
-.btn-view-nav-closed[disabled]:active,
-.btn-view-nav-closed[disabled].active,
+.btn-view-nav-closed:disabled:hover,
+.btn-view-nav-closed:disabled:focus,
+.btn-view-nav-closed:disabled:active,
+.btn-view-nav-closed:disabled.active,
 fieldset[disabled] .btn-view-nav-closed:hover,
 fieldset[disabled] .btn-view-nav-closed:focus,
 fieldset[disabled] .btn-view-nav-closed:active,

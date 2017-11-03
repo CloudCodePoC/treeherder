@@ -17,7 +17,11 @@ body {
     margin-bottom: 10px; /* Breathing space for run-data */
 }
 
-.navbar > li > a, .navbar-default > li > a, .navbar-nav > li > a {
+.nav li {
+    padding-right: 20px;
+}
+
+.navbar > li > a, .navbar-light > li > a, .navbar-nav > li > a {
     padding: 0;
     line-height: inherit;
 }

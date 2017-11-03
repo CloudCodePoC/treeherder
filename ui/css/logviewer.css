@@ -24,17 +24,31 @@ body {
     padding-bottom: 8px;
 }
 
-.navbar-nav > li > a {
+.navbar-light {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    padding: 0;
+}
+
+.navbar-row {
+    flex-direction: row;
+}
+
+.navbar-row li {
+    align-self: center;
+}
+
+.navbar-row > li > a {
     padding: 10px 15px;
     font-size: 12px;
 }
 
-.navbar-nav > li > div {
+.navbar-row > li > div {
     padding: 10px 15px;
     line-height: 20px;
 }
 
-.navbar-nav > li > span {
+.navbar-row > li > span {
     line-height: 20px;
 }
 

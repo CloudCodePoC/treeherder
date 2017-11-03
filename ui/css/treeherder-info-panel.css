@@ -172,7 +172,6 @@ div#info-panel .info-panel-navbar .navbar-nav > li.active a:focus {
 }
 
 .actionbar-menu {
-  /* We have to override non-responsive bootstrap for correct styling */
   margin-top: 1px !important;
   margin-left: 6px;
   border-radius: 4px !important;
