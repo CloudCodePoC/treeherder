@@ -227,10 +227,9 @@
     {{numFilteredAlertSummaries}} alerts not displayed because they had no changes matching filter criteria
   </p>
 </div>
-
-<div class="text-center">
-    <uib-pagination ng-model="alertSummaryCurrentPage" ng-change="getAlertSummariesPage()"
-                    ng-show="alertSummaryCount > alertSummaryPageSize" max-size="10"
-                    total-items="alertSummaryCount" items-per-page="alertSummaryPageSize"
-                    rotate="false" boundary-link-numbers="true"></uib-pagination>
+<div class="d-flex justify-content-center md-18">
+    <ul uib-pagination ng-model="alertSummaryCurrentPage" ng-change="getAlertSummariesPage()"
+        ng-show="alertSummaryCount > alertSummaryPageSize" max-size="10"
+        total-items="alertSummaryCount" items-per-page="alertSummaryPageSize"
+        rotate="false" boundary-link-numbers="true"></ul>
 </div>
