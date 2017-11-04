@@ -19,14 +19,14 @@ treeherder.component("login", {
               <span class="fa fa-user pull-left"></span>
             </div>
           </button>
-          <ul class="dropdown-menu dropdown-menu-right container" role="menu" aria-labelledby="logoutLabel">
+          <ul class="dropdown-menu nav-dropdown-menu-right" role="menu" aria-labelledby="logoutLabel">
               <li><a ng-click="$ctrl.logout()" class="dropdown-item">Logout</a></li>
           </ul>
         </span>
 
-        <a class="btn btn-view-nav btn-right-navbar nav-login-btn"
+        <span class="btn btn-right-navbar nav-login-btn"
            ng-if="!$ctrl.user.loggedin && $ctrl.userCanLogin && !ctrl.userLoggingIn"
-           ng-click="$ctrl.login()">Login/Register</a>
+           ng-click="$ctrl.login()">Login/Register</span>
         <span ng-if="$ctrl.userLoggingIn"
               class="midgray"
               title="User is already logging in">Logging In...</span>

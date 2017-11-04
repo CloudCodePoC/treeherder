@@ -51,7 +51,7 @@
         ·
         <span ng-if="alertSummary.resultSetMetadata && alertSummary.resultSetMetadata" title="{{alertSummary.resultSetMetadata.comments}}" uib-dropdown>
           <button id="push-dropdown" class="btn btn-link dropdown" uib-dropdown-toggle data-toggle="dropdown">
-            {{alertSummary.resultSetMetadata.revision | limitTo: 12}}<span class="caret"></span>
+            {{alertSummary.resultSetMetadata.revision | limitTo: 12}}
           </button>
           <ul class="uib-dropdown-menu" uib-dropdown-menu aria-labelledby="push-dropdown">
             <li role="menuitem"><a href="{{alertSummary.jobsURL}}" target="_blank" class="dropdown-item">Jobs</a></li>
@@ -74,7 +74,6 @@
         <div class="btn-group" uib-dropdown>
           <button id="status-dropdown" class="btn btn-link status-dropdown" uib-dropdown-toggle data-toggle="dropdown">
 {{alertSummary.getStatusText()}}
-            <span class="caret"></span>
           </button>
           <ul class="uib-dropdown-menu" uib-dropdown-menu aria-labelledby="status-dropdown">
             <li role="menuitem">
@@ -227,10 +226,9 @@
     {{numFilteredAlertSummaries}} alerts not displayed because they had no changes matching filter criteria
   </p>
 </div>
-
-<div class="text-center">
-    <uib-pagination ng-model="alertSummaryCurrentPage" ng-change="getAlertSummariesPage()"
-                    ng-show="alertSummaryCount > alertSummaryPageSize" max-size="10"
-                    total-items="alertSummaryCount" items-per-page="alertSummaryPageSize"
-                    rotate="false" boundary-link-numbers="true"></uib-pagination>
+<div class="d-flex justify-content-center md-18">
+    <ul uib-pagination ng-model="alertSummaryCurrentPage" ng-change="getAlertSummariesPage()"
+        ng-show="alertSummaryCount > alertSummaryPageSize" max-size="10"
+        total-items="alertSummaryCount" items-per-page="alertSummaryPageSize"
+        rotate="false" boundary-link-numbers="true"></ul>
 </div>

@@ -42,7 +42,7 @@
             <div class="input-group-btn">
               <button type="button" class="btn btn-light-bordered dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Recent</button>
-              <ul class="dropdown-menu dropdown-menu-right" >
+              <ul class="dropdown-menu dropdown-menu-right">
                 <li ng-repeat="tip in newTipList"><a ng-click="getNewTipRevision(tip.revision);" class="dropdown-item">
                     {{tip.revision | limitTo: 12}} {{tip.author}}
                 </a></li>

@@ -79,12 +79,10 @@ body {
 }
 
 .lv-line-no {
-    width: 3em;
-}
-
-.lv-line-no.label {
-    border-radius: 0px;
-    margin: 0em 0.6em 0em 0em;
+    width: 4em;
+    padding: 2px 1px 4px 5px;
+    border-radius: 0;
+    margin: 0 0.2em 0 0;
 }
 
 .lv-error-line {
@@ -156,7 +154,7 @@ div.lv-step {
     background-color: #FFF;
 }
 
-.lv-actionbtn span {
+.lv-actionbtn span, .navbar-default li > a {
     color: #777;
 }
 
