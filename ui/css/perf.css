@@ -572,15 +572,28 @@ li.pagination-next .material-icons::before {
    the tooltips, and they removed the element that normally was decorated
    to show them.  So this adds them back in as an "after" element.
  */
-[uib-tooltip-popup].tooltip::after {
+[uib-tooltip-popup].tooltip.show::after {
   content: "";
   width: 0;
   height: 0;
   position: absolute;
-  margin-left: 47%;
   font-size: 7px;
+}
+
+/* Top popups */
+[uib-tooltip-popup].tooltip.top::after {
+  margin-left: 47%;
   text-align: center !important;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid black;
+}
+
+/* Left popups */
+[uib-tooltip-popup].tooltip.left::after {
+  margin-left: 100%;
+  margin-top: -27%;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid black;
 }
