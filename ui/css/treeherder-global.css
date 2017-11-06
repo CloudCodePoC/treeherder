@@ -93,6 +93,10 @@ input[type="checkbox"] {
   width: 20px;
 }
 
+.modal-header .close:hover {
+  cursor: pointer;
+}
+
 /*
  * Icons
  */

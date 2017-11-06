@@ -437,6 +437,7 @@ span.compare-notsure {
 
 .alert-summary-title #push-dropdown {
   padding: 0;
+  margin-bottom: -4px;
 }
 
 .alert-summary .compare-table {
@@ -576,7 +577,7 @@ li.pagination-next .material-icons::before {
   width: 0;
   height: 0;
   position: absolute;
-  margin-left: 80px;
+  margin-left: 47%;
   font-size: 7px;
   text-align: center !important;
   border-left: 5px solid transparent;
